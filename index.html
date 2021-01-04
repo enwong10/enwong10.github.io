@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html>
+
+<title>Enoch Wong</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" type="image/jpg" href="favicon.jpg" />
+
+<style>
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Georgia"
+  }
+
+  body {
+    font-family: "Montserrat", sans-serif
+  }
+
+  .iconContent {
+    display: flex !important; 
+    flex-direction: row; 
+    height: 80px; 
+    align-items: center; 
+    justify-content: center;
+  }
+
+  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+  .sectionMargin {
+    padding-top: 100px;
+  }
+
+  .pageMargin {
+    margin-top: 80px;
+  }
+
+  p, .textColour {
+    color: #c2c2c2 !important;
+  }
+
+  /* Remove margins from "page content" on small screens */
+
+  @media only screen and (max-width: 600px) {
+    .sectionMargin {
+      padding-top: 32px;
+    }
+
+    .pageMargin {
+      margin-top: 0px;
+    }
+
+    .image {
+      width: 100% !important; 
+      padding: 0px !important; 
+      margin-bottom: 10px; 
+    }
+  }
+</style>
+
+<body class="w3-black">
+  <div class="pageMargin" style="width: 100vw; height: 100vh; ">
+    <!-- Header/Home -->
+    <video id="home" style="width: 100vw; height: 100vh; object-fit: fill; " loop autoplay muted>
+      <source src="home.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-bar w3-bar-block w3-small w3-hide-small w3-center" style="background-color: black; top: 0; height: 80px; position: fixed; width: 100%; display: flex; flex-direction: row; justify-content: space-between; z-index: 1; ">
+    <!-- Avatar image in top left corner -->
+    <img src="Me2.png" style="height: 80px; margin-bottom: 5px; ">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black iconContent">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p style="margin-left: 10px; ">HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black iconContent">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p style="margin-left: 10px; ">ABOUT</p>
+    </a>
+    <a href="#work" class="w3-bar-item w3-button w3-padding-large w3-hover-black iconContent">
+      <i class="fa fa-briefcase w3-xxlarge"></i>
+      <p style="margin-left: 10px; ">WORK</p>
+    </a>
+    <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black iconContent">
+      <i class="fa fa-eye w3-xxlarge"></i>
+      <p style="margin-left: 10px; ">PROJECTS</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black iconContent">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p style="margin-left: 10px; ">CONTACT</p>
+    </a>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="w3-padding-large">
+    <!-- About Section -->
+    <div class="w3-content w3-text-grey sectionMargin" id="about">
+      <div class="w3-twothird" style="padding-right: 10px; ">
+        <h2 class="w3-text-light-grey">About Me</h2>
+        <hr class="w3-opacity" style="margin: 10px 0 !important">
+        <p>Welcome! I’m glad you are interested in me, whether you are a potential employer or justa very creepy stalker. I’m currently
+          attending the University of Waterloo for Systems Design Engineering with an AI option. Recently completed a co-op term at Showfloor, doing front-end 
+          development on their startup event-hosting product. Previously worked as a back-end developer with LocalIntel in Calgary on a variety of different projects, 
+          and at NOVX Systems, developing the Lyte project from start to finish. I've also got some pretty out-of-this-world side projects. Check out some of my work below! 
+          I have a passion for music, sports, and bad jokes – get to know me and I’ll prove it to you! </p>
+        <br>
+        <br>
+      </div>
+      <div class="w3-third w3-center">
+        <img src="Me.png" alt="Me" class="w3-image" height="300" width='300' style="margin-bottom: 32px;">
+      </div>
+      <div class="w3-content">
+        <h3 class="w3-row w3-text-light-grey">My Skills</h3>
+        <p style="margin-bottom: 0.5em !important; letter-spacing: 2px; ">Frontend Development (React, Angular, HTML, CSS, TS, ...)</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+        </div>
+        <p style="margin-bottom: 0.5em !important; letter-spacing: 2px; ">Backend Development (SQL, Java, C++, C#, Python, ... )</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+        </div>
+        <p style="margin-bottom: 0.5em !important; letter-spacing: 2px; ">UX/UI Design</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height:28px;width:75%"></div>
+        </div>
+        <p style="margin-bottom: 0.5em !important; letter-spacing: 2px; ">Data Science</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height:28px;width:60%"></div>
+        </div>
+        <br>
+        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+          <div class="w3-quarter w3-section" style="padding: 15px; ">
+            <span class="w3-xlarge">8</span>
+            <br> years of coding experience
+          </div>
+          <div class="w3-quarter w3-section" style="padding: 15px; ">
+            <span class="w3-xlarge">14+</span>
+            <br> fluent languages
+            <br> (if you include English, French, and Cantonese)
+          </div>
+          <div class="w3-quarter w3-section" style="padding: 15px; ">
+            <span class="w3-xlarge">1</span>
+            <br> "Best Educational Hack" award
+          </div>
+          <div class="w3-quarter w3-section" style="padding: 15px; ">
+            <span class="w3-xlarge">53</span>
+            <br> years of misery as a Leafs fan &#128546
+          </div>
+        </div>
+        <br>
+        <div style="margin:0; display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap; ">
+          <div>
+            <a href="resume.pdf" target="_blank">
+              <button class="w3-button w3-light-grey w3-padding-large w3-section" style="width: 225px; margin-top: 0px !important; ">
+                <i class="fa fa-download"></i> Download Resume
+              </button>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/enwong10" target="_blank" style="text-decoration: none; width: 225px; margin-top: 0px !important; "
+              class="w3-button w3-light-grey w3-padding-large w3-section">
+              <i class="fa fa-linkedin"> </i> View LinkedIn</a>
+          </div>
+          <div>
+            <a href="https://www.github.com/enwong1" target="_blank" style="text-decoration: none; width: 225px; margin-top: 0px !important; "
+              class="w3-button w3-light-grey w3-padding-large w3-section">
+              <i class="fa fa-github"> </i> View Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Work Section -->
+    <div class="sectionMargin w3-content w3-text-grey" style="display: flex; flex-direction: column; " id="work">
+      <h2 class="w3-text-light-grey">Work Experience</h2>
+      <hr class="w3-opacity" style="margin: 10px 0 !important">
+      <h4 style="color: white; margin-bottom: 0px; ">2020 - Showfloor</h4>
+      <p>Worked as a front-end developer at Showfloor startup. Designed and developed key features to the platform, including the main expo page, 
+        group and private chat with exhibitors, a stage with Zoom webinar integration, an optimized booth search function, ...and much more! 
+        Worked with React and Redux to build a multi-use product for both attendees and exhibitors with cross-browser and mobile support. 
+        Check out their exceptional product 
+        <a href="https://showfloor.co" target="_blank" style="color: white"> here</a>. </p>
+      <br>
+      <div style="display: flex; flex-direction: row; width: 100%; flex-wrap: wrap; ">
+        <img src="ShowfloorExpo.jpg" class="w3-xxlarge w3-image w3-hover-opacity-off image" alt="Showfloor - Expo" style="width: 50%; padding-right: 5px; ">
+        <img src="ShowfloorChat.jpg" class="w3-xxlarge w3-image w3-hover-opacity-off image" alt="Showfloor - Chat" style="width: 50%; padding-left: 5px; ">
+      </div>
+      <br>
+      <br>
+      <h4 style="color: white; margin-bottom: 0px; ">2019 - Lyte Project </h4>
+      <p>Developed a web application for Lyte Clinic using Angular (HTML, CSS, TS). This app is to be hosted at several kiosk
+        locations across Canada including Walmart, with the intention of expanding globally. Patient information and clinic
+        information is securely sent and stored through RESTful APIs, with live tracking of available doctor and educator
+        appointments. Integrated emailing service into application to allow users to complete surveys at a later date. </p>
+      <br>
+      <div style="display: flex; flex-direction: row; width: 100%; flex-wrap: wrap; ">
+        <img src="Lyte1.PNG" class="w3-xxlarge w3-image w3-hover-opacity-off image" alt="Lyte - Home" style="width: 50%; padding-right: 5px; ">
+        <img src="Lyte2.png" class="w3-xxlarge w3-image w3-hover-opacity-off image" alt="Lyte - Doctor's Appointment" style="width: 50%; padding-left: 5px; ">
+      </div>
+      <br>
+      <br>
+      <h4 style="color: white; margin-bottom: 0px; ">2019 - NOVX Patient Kiosk </h4>
+      <p>Designed and implemented a user-facing patient kiosk for NOVX Systems to use with their existing EMR program. Incorporated
+        functions for patients to view future appointments, view current medications, and designed a patient-clinic messaging
+        system for patients to easily contact their clinic. Integrated a PDF viewer and created a survey rendering engine
+        to allow clinics to send forms and custom surveys for patient completion. </p>
+      <br>
+      <img src="PatientKiosk1.png" class="w3-xxlarge w3-image w3-hover-opacity-off" alt="PatientKiosk - Home" width="750" height="750"
+        style="align-self: center; ">
+      <br>
+      <br>
+      <h4 style="color: white; margin-bottom: 0px; ">2019 - Survey Rendering Engine</h4>
+      <p>Created a survey schema for custom survey templates used by over 90 clinics across Canada. This allowed clinics to
+        customize their surveys to better suit their needs. The render engine accepted a JSON input and would output items
+        in HTML onto the screen, while taking into account styles and designs as specified by the survey template. Items
+        such as radio buttons, check boxes, number boxes and others were written using Angular and dynamically inserted depending
+        on the template.
+      </p>
+      <br>
+      <img src="Survey.png" class="w3-xxlarge w3-image w3-hover-opacity-off" alt="Sample Survey" width="750" height="750" style="align-self: center; ">
+      <br>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="sectionMargin w3-content w3-text-grey" style="display: flex; flex-direction: column; " id="projects">
+      <h2 class="w3-text-light-grey">Side Projects</h2>
+      <hr class="w3-opacity" style="margin: 10px 0 !important">
+      <h4 style="color: white; margin-bottom: 0px; ">
+        <a href="https://github.com/enwong10/Hohmann-Transfer-Space-Simulator" target="_blank" style="text-decoration: none;">2020 - Space Travel Flight Path Simulator</a>
+      </h4>
+      <p>Designed an interactive app to calculate and simulate a flight path to any other planet in the Solar System. 
+        Created with React, this app searches for the next available launch date, from Earth to a planet of choice, according to the 
+        <a href="https://en.wikipedia.org/wiki/Hohmann_transfer_orbit" target="_blank" style="color: white"> Hohmann Transfer Orbit</a>.
+        Original idea was attempted by my team for the University of Toronto Hackathon; won 2018 “Best Education Hack” award. </p>
+      <br>
+      <img src="SpaceToursSim.gif" class="w3-xxlarge w3-image w3-hover-opacity-off" alt="Space Tours Simulator" width="750" height="750"
+        style="align-self: center; ">
+      <br>
+      <br>
+      <h4 style="color: white; margin-bottom: 0px; ">
+        <a href="https://github.com/enwong10/Whats-For-Dinner" target="_blank" style="text-decoration: none;">2020 - What's For Dinner?</a>
+      </h4>
+      <p>Developed a quick app to allow users to select a list of ingredients. App provides users with a list of recipes based
+        on ingredients selected and various information for an informed choice. Choosing the recipe opens up instructions for the 
+        user to follow and make a tasty meal! </p>
+      <br>
+      <img src="WhatsForDinner.png" class="w3-xxlarge w3-image w3-hover-opacity-off" alt="What's For Dinner?" width="750" height="750"
+        style="align-self: center; ">
+      <br>
+      <br>
+      <h4 style="color: white; margin-bottom: 0px; ">
+        <a href="https://github.com/enwong10/Echolocation-Simulator" target="_blank" style="text-decoration: none;">2018 - Echolocation Simulator</a>
+      </h4>  
+      <p>Modelled object tracking using echolocation technique using an Arduino and 4 ultrasonic sensors. Calculated the distances
+        based on response times and the speed of sound, and graphically mapped and displayed object-location on screen. Increased
+        accuracy and precision through iterative testing and the use of pin-based and timer-based interrupts. </p>
+      <br>
+      <img src="Echo.gif" class="w3-xxlarge w3-image w3-hover-opacity-off" alt="Echolocation Simulator" width="750" height="750"
+        style="align-self: center; ">
+      <br>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="sectionMargin w3-content w3-text-grey" id="contact">
+      <h2 class="w3-text-light-grey">Contact</h2>
+      <hr class="w3-opacity" style="margin: 10px 0 !important">
+      <div class="w3-section">
+        <p>
+          <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> (647)-286-1715</p>
+        <p>
+          <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> eyl2999w@uwaterloo.ca</p>
+        <p>
+          <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Waterloo, ON</p>
+      </div>
+      <br>
+      <h4 class="w3-text-light-grey">Social Media</h3>
+        <a href="https://www.facebook.com/en.wong10" target="_blank" class="w3-xxlarge w3-text-white " style="text-decoration: none">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        </a>
+        <a href="https://twitter.com/enwong10" target="_blank" class="w3-xxlarge w3-text-white " style="text-decoration: none">
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+        </a>
+        <a href="https://www.instagram.com/en_wong1" target="_blank" class="w3-xxlarge w3-text-white " style="text-decoration: none">
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+        </a>
+        <a href="https://www.snapchat.com/add/en_wong1" target="_blank" class="w3-xxlarge w3-text-white " style="text-decoration: none">
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/enwong10" target="_blank" class="w3-xxlarge w3-text-white " style="text-decoration: none">
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </a>
+        <a href="https://github.com/enwong10" target="_blank" class="w3-xxlarge w3-text-white " style="text-decoration: none">
+          <i class="fa fa-github w3-hover-opacity"></i>
+        </a>
+        <br>
+        <br>
+
+        <h4 class="textColour">"The only person you should try to be better than is the person you were yesterday."
+          <br> -Matty Mullins</h4>
+        <br>
+        <h4 class="textColour">"Those at the top of the mountain didn't fall there."
+          <br> -Vince Lombardi</h4>
+        <br>
+        <br>
+    </div>
+</body>
+
+</html>
